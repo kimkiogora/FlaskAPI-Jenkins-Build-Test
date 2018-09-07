@@ -1,4 +1,6 @@
 #! venv/bin/python
+
+#Author <kimkiogora>
 from flask import Flask
 from flask_restful import Resource, Api
 
@@ -7,7 +9,7 @@ api = Api(app)
 
 class HelloWorld(Resource):
     def get(self):
-        return {'hello': 'world'}
+        return {'helloi': 'world'}
 
 api.add_resource(HelloWorld, '/')
 
